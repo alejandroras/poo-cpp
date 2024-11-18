@@ -6,7 +6,6 @@ Este proyecto implementa un sistema interactivo de gestión para un restaurante 
 - Gestión de menú: El sistema organiza el menú en categorías como Entrantes, Platos Fuertes, Bebidas y Postres, y permite marcar "Platillos del Día" o aplicar descuentos exclusivos en ciertos platillos.
 - Reservas y Estado de Mesas: Cada mesa tiene un estado (Libre, Ocupada o Reservada), y el sistema permite reservar mesas para una fecha y hora específica.
 - Pedidos Personalizados: Los clientes pueden hacer pedidos personalizados (por ejemplo, sin gluten o sin azúcar), y el sistema registra los detalles y preferencias de cada orden.
-- Tipos de Cliente: El sistema diferencia entre clientes regulares y VIP, proporcionando descuentos exclusivos y almacenando un historial de pedidos para una experiencia más personalizada.
 - Facturación y Propinas: Al finalizar cada pedido, el sistema calcula el total de la cuenta con propinas y aplica descuentos especiales para clientes VIP. Se puede gestionar el pago con diferentes métodos (tarjeta, efectivo, etc.).
 
 ## Algoritmo
