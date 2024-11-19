@@ -6,10 +6,10 @@ using namespace std;
 
 enum Categoria
 {
-    ENTRADA,
-    PLATO_FUERTE,
-    BEBIDA,
-    POSTRE
+    entrada,
+    plato_fuerte,
+    bebida,
+    postre
 };
 
 class Platillo
@@ -19,19 +19,19 @@ private:
     Categoria categoria;
     float precio;
     bool esplatillodeldia;
-    float descuento;
+    string descripcion;
 
 public:
     Platillo();
-    Platillo(string _nombre, Categoria _categoria, float _precio);
+    Platillo(string _nombre, Categoria _categoria, float _precio, string _descripcion);
+
     string getnombre();
     Categoria getcategoria();
     float getprecio();
     bool getesplatillodeldia();
-    float getdescuento();
+    string getdescripcion();
 
     void marcarplatillodeldia();
-    void aplicardescuento(float descuento);
     void imprimirplatillo() const;
 };
 

@@ -13,6 +13,7 @@ private:
 public:
     Cliente();
     Cliente(string _nombre, string _telefono);
+
     string getnombrecliente();
     string gettelefonocliente();
 

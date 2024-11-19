@@ -21,7 +21,7 @@ Cliente::Cliente(string _nombre, string _telefono)
 void Cliente::imprimircliente() const
 {
     cout << "Nombre del cliente: " << nombre << endl;
-    cout << "Teléfono del cliente: " << telefono << endl;
+    cout << "Teléfono del cliente: +" << telefono << endl;
 }
 
 // Método para escribir el teléfono del cliente

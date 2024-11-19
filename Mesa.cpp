@@ -25,7 +25,8 @@ void Mesa::imprimirmesa() const
     cout << "Capacidad de la mesa: " << capacidad << endl;
 }
 
-/* Método para obtener el estado de la mesa
+/*
+Método para obtener el estado de la mesa
 void Mesa::get_capacidad_mesa()
 {
     return capacidad;

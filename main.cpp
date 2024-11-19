@@ -6,6 +6,9 @@
 
 using namespace std;
 
+// linea para ejecutar el programa: g++ -o gestion_restaurante main.cpp Platillo.cpp Mesa.cpp Cliente.cpp
+//  ./gestion_restaurante.exe
+
 int main()
 {
     Platillo platillo1;
@@ -13,7 +16,7 @@ int main()
 
     cout << "----------------" << endl;
 
-    Platillo platillo2("Tacos", PLATO_FUERTE, 50);
+    Platillo platillo2("Tacos", plato_fuerte, 50, "Tortilla con carne");
     platillo2.imprimirplatillo();
 
     cout << "----------------" << endl;
@@ -27,6 +30,14 @@ int main()
     mesa2.imprimirmesa();
 
     cout << "-----------------" << endl;
+
+    Cliente cliente1;
+    cliente1.imprimircliente();
+
+    cout << "-----------------" << endl;
+
+    Cliente cliente2("Juan", "5248267857");
+    cliente2.imprimircliente();
 
     return 0;
 }
