@@ -4,26 +4,27 @@
 #include <iostream>
 using namespace std;
 
-/*
-enum estadomesa
+enum Estadomesa
 {
-    LIBRE,
-    OCUPADA,
-    RESERVADA
+    libre,
+    ocupada
 };
-*/
 
 class Mesa
 {
 private:
     int numero;
-    // estadomesa estado;
+    Estadomesa estado;
     int capacidad;
 
 public:
     Mesa();
     Mesa(int _numero, int _capacidad);
-    // void get_capacidad_mesa();
+    void get_capacidad_mesa();
+    void ocuparmesa();
+    void liberarmesa();
+    Estadomesa get_estado_mesa() const;
+
     void imprimirmesa() const;
 };
 

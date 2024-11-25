@@ -3,6 +3,7 @@
 #include "Mesa.h"
 #include "Cliente.h"
 #include <string>
+#include "Menu.h"
 
 using namespace std;
 
@@ -40,4 +41,15 @@ int main()
     cliente2.imprimircliente();
 
     return 0;
+
+    Menudeldia menulunes(3);
+    menulunes.agregar_platillo("Camarones enchipotlados");
+    menulunes.agregar_platillo("Enchiladas suizas");
+    menulunes.agregar_platillo("Club sandwich");
+
+    cout << "\n ---- Menú del día ----" << endl;
+    cout << "           Lunes         " << endl;
+    menulunes.imprimirmenu();
+
+    cout << " ----------------------- " << endl;
 }
