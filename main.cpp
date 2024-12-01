@@ -7,9 +7,6 @@
 
 using namespace std;
 
-// linea para ejecutar el programa: g++ -o gestion_restaurante main.cpp Platillo.cpp Mesa.cpp Cliente.cpp
-//  ./gestion_restaurante.exe
-
 int main()
 {
     Platillo platillo1;
