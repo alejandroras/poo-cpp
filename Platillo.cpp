@@ -6,11 +6,11 @@ using namespace std;
 // Constructor por defecto
 Platillo::Platillo()
 {
-    nombre = "El nombre del platillo es desconocido";
-    categoria = Categoria();
-    precio = 0;
+    nombre = "Sin nombre";
+    categoria = entrada;
+    precio = 0.0;
     esplatillodeldia = false;
-    descripcion = "No hay descripción del platillo";
+    descripcion = "Sin descripción";
 }
 
 // Constructor con parámetros
@@ -20,16 +20,47 @@ Platillo::Platillo(string _nombre, Categoria _categoria, float _precio, string _
     categoria = _categoria;
     precio = _precio;
     descripcion = _descripcion;
+    esplatillodeldia = false;
 }
 
-const string nombrescategorias[] = {"Entrada", "Plato Fuerte", "Bebida", "Postre"};
+// Getters
+string Platillo::getnombre() const
+{
+    return nombre;
+}
 
-// Método para imprimir el platillo
+Categoria Platillo::getcategoria() const
+{
+    return categoria;
+}
+
+float Platillo::getprecio() const
+{
+    return precio;
+}
+
+bool Platillo::getesplatillodeldia() const
+{
+    return esplatillodeldia;
+}
+
+string Platillo::getdescripcion() const
+{
+    return descripcion;
+}
+
+// Métodos adicionales
+void Platillo::marcarplatillodeldia()
+{
+    esplatillodeldia = true;
+}
+
 void Platillo::imprimirplatillo() const
 {
+    const string categorias[] = {"Entrada", "Plato Fuerte", "Bebida", "Postre"};
     cout << "Nombre: " << nombre << endl;
-    cout << "Categoría: " << nombrescategorias[categoria] << endl;
+    cout << "Categoría: " << categorias[categoria] << endl;
     cout << "Precio: $" << precio << endl;
-    cout << "¿Es platillo del día? " << esplatillodeldia << endl;
-    cout << "Descripción del platillo: " << descripcion << endl;
+    cout << "Descripción: " << descripcion << endl;
+    cout << (esplatillodeldia ? "Es platillo del día" : "No es platillo del día") << endl;
 }

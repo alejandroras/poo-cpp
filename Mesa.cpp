@@ -6,19 +6,19 @@ using namespace std;
 // Constructor por defecto
 Mesa::Mesa()
 {
-    numero = 000;
-    estado = Estadomesa(0); // Las mesas están libres por defecto.
+    numero = 0;
+    estado = libre; // Las mesas están libres por defecto.
 }
 
 // Constructor por parámetros
 Mesa::Mesa(int _numero)
 {
     numero = _numero;
-    estado = Estadomesa(0); // Las mesas están libres por defecto.
+    estado = libre; // Las mesas están libres por defecto.
 }
 
 // Método para obtener el estado de la mesa
-Estadomesa Mesa::get_estado_mesa() const
+Estadomesa Mesa::getestadomesa() const
 {
     return estado;
 }
@@ -46,11 +46,11 @@ void Mesa::mostrarpedidos() const
 {
     if (pedidos.empty())
     {
-        cout << "La mesa Número: " << numero << " no tiene pedidos." << endl;
+        cout << "La mesa número " << numero << " no tiene pedidos." << endl;
     }
     else
     {
-        cout << "Pedidos en la mesa Número: " << numero << ":" << endl;
+        cout << "Pedidos en la mesa número " << numero << ":" << endl;
         for (const auto &platillo : pedidos)
         {
             platillo.imprimirplatillo();
@@ -59,7 +59,6 @@ void Mesa::mostrarpedidos() const
 }
 
 // Método para imprimir la mesa
-
 void Mesa::imprimirmesa() const
 {
     const string estadosmesa[] = {"Libre", "Ocupada"};

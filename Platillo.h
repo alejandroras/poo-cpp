@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+// Enumeración para las categorías de platillos
 enum Categoria
 {
     entrada,
@@ -22,17 +23,21 @@ private:
     string descripcion;
 
 public:
+    // Constructores
     Platillo();
     Platillo(string _nombre, Categoria _categoria, float _precio, string _descripcion);
 
-    string getnombre();
-    Categoria getcategoria();
-    float getprecio();
-    bool getesplatillodeldia();
-    string getdescripcion();
+    // Getters
+    string getnombre() const;
+    Categoria getcategoria() const;
+    float getprecio() const;
+    bool getesplatillodeldia() const;
+    string getdescripcion() const;
 
+    // Métodos adicionales
     void marcarplatillodeldia();
-    void imprimirplatillo() const;
+    void validarplatillo() const;  // Nuevo método para validar atributos
+    void imprimirplatillo() const; // Imprime la información del platillo
 };
 
 #endif

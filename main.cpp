@@ -26,7 +26,7 @@ int main()
 
     cout << "----------------" << endl;
 
-    Mesa mesa2(10, 4);
+    Mesa mesa2(10);
     mesa2.imprimirmesa();
 
     cout << "-----------------" << endl;
@@ -55,7 +55,7 @@ int main()
     cout << " ----------------------- " << endl;
 
     // Crear otra mesa y agregar pedidos
-    Mesa mesa3(1, 4);
+    Mesa mesa3(1);
 
     Platillo platillo3("Quesadillas", plato_fuerte, 50, "Quesadillas con queso");
     Platillo platillo4("Coca-cola", bebida, 20, "Refresco de cola");
