@@ -8,14 +8,12 @@ Mesa::Mesa()
 {
     numero = 000;
     estado = Estadomesa(0); // Las mesas están libres por defecto.
-    capacidad = 0;
 }
 
 // Constructor por parámetros
-Mesa::Mesa(int _numero, int _capacidad)
+Mesa::Mesa(int _numero)
 {
     numero = _numero;
-    capacidad = _capacidad;
     estado = Estadomesa(0); // Las mesas están libres por defecto.
 }
 
@@ -37,12 +35,34 @@ void Mesa::liberarmesa()
     estado = libre;
 }
 
+// Método para agregar un pedido
+void Mesa::agregarpedido(const Platillo &platillo)
+{
+    pedidos.push_back(platillo);
+}
+
+// Método para mostrar los pedidos
+void Mesa::mostrarpedidos() const
+{
+    if (pedidos.empty())
+    {
+        cout << "La mesa Número: " << numero << " no tiene pedidos." << endl;
+    }
+    else
+    {
+        cout << "Pedidos en la mesa Número: " << numero << ":" << endl;
+        for (const auto &platillo : pedidos)
+        {
+            platillo.imprimirplatillo();
+        }
+    }
+}
+
 // Método para imprimir la mesa
-const string estadosmesa[] = {"Libre", "Ocupada"};
 
 void Mesa::imprimirmesa() const
 {
+    const string estadosmesa[] = {"Libre", "Ocupada"};
     cout << "Número de mesa: " << numero << endl;
-    cout << "Capacidad de la mesa: " << capacidad << endl;
     cout << "Estado de la mesa: " << estadosmesa[estado] << endl;
 }
