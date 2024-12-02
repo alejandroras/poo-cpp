@@ -5,8 +5,6 @@ Avance 2
 Modelo un diagrama de clase útil para solucionar un problema utilizando UML.
 Avance 2
 
- 
- 	
 Utilizo el concepto de composición (o agreagación) en el diagrama de clases.
 Avance 3
 
@@ -25,7 +23,9 @@ Avance 3
 Sigo estándares en todo mi código fuente: estilo, sangrías, comentarios, nombres, etc...
 Avance 3
 
- 
- 	
 Guardo correctamente los avances en commits durante la materia.
 Avance 3
+
+Comentarios en Avance 2: Revisa tu UML tienes tipos de dato como Categoria y Estadomesa que no estan definidas
+Comentarios en Avance 3: Solo cuentas con un commit. No implementas herencia y composición esta mal descrita y no implementada.
+
