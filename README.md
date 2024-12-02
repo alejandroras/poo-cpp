@@ -1,6 +1,6 @@
 # Sistema de Gestión de Restaurante
 
-EEste proyecto implementa un sistema interactivo de gestión para un restaurante que permite administrar las mesas, los pedidos y el menú de forma dinámica. El objetivo es mejorar la organización del restaurante y ofrecer un servicio personalizado a los clientes.
+Este proyecto implementa un sistema interactivo de gestión para un restaurante que permite administrar las mesas, los pedidos y el menú de forma dinámica. El objetivo es mejorar la organización del restaurante y ofrecer un servicio personalizado a los clientes.
 
 ## Características del sistema
 
